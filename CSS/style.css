@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: "Kumbh Sans";
+    height: 100vh;
+    overflow: hidden;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.top {
+    position: absolute;
+    top: -80%;
+    left: -20%
+}
+.bottom {
+    position: absolute;
+    bottom: -100%;
+    right: -20%;
+}
+main {
+    width: 350px;
+    background-color: hsl(0, 0%, 95%);
+    z-index: 99;
+    border-radius: 15px;
+}
+main .background {
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+}
+main .background img {
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+}
+main .picture {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+main .picture img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px hsl(0, 0%, 95%) solid;
+}
+main  h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+main > h1 span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 0.8em;
+}
+main > h1 + p {
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+}
+main .features {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+main .features .feature {
+    text-align: center;
+}
+main .features .feature p {
+    color:hsl(0, 0%, 59%)
+}
+@media (max-width: 766px) {
+    .top {
+        position: absolute;
+        top: -50%;
+        left: -175%;
+    }
+    .bottom {
+        bottom: -65%;
+        right: -160%;
+    }
+    main h1 {
+        font-size: 1.3em;
+    }
+    main > h1 span {
+        font-size: 0.7em;
+    }
+    main > h1 + p,
+    main .features .feature p {
+        font-size: 0.8em;
+    }
+}
